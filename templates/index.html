@@ -1,0 +1,19 @@
+<!-- Extend from base.html -->
+{% extends "base.html" %}
+
+{% block title %}
+Emoticon HomePage
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Faces</h1>
+    <p class="lead">This a simple Face Detection App</p>
+  </div>
+
+<form action="{{ url_for('webcam') }}" method="POST">
+    <button type="submit">
+        Start
+    </button>
+</form>
+{% endblock %}
